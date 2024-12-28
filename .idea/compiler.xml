@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Microservices-students" />
+        <module name="Microservices-Gateway" />
+        <module name="Microservices-Courses" />
+        <module name="Microservices-Eureka" />
+        <module name="Microservices-Config" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Microservices-Config" options="-parameters" />
+      <module name="Microservices-Courses" options="-parameters" />
+      <module name="Microservices-Eureka" options="-parameters" />
+      <module name="Microservices-Gateway" options="-parameters" />
+      <module name="Microservices-students" options="-parameters" />
+    </option>
+  </component>
+</project>
