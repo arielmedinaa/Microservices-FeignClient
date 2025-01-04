@@ -1,15 +1,13 @@
 package persistence.entities;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
-@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 @Entity
-@Table(name = "students")
+@Table(name = "students", schema = "public")
 public class Students {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
